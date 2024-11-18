@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="project-2.css">
+</head>
+<body>
+    <div class="content">
+        <div class="content-0">
+            <i class="fa-solid fa-bars border" id="bars" onclick="myfunction()"></i>
+            <div class="image border"><img src="Untitled40_20240404135703.png" width="160px" height="140px"></div>
+            <div class="content-0-input border">
+                <input placeholder="search items..." id="enter" type="search">
+                <div class="input-icon">
+                    <label for="enter"><i class="fa-solid fa-magnifying-glass"></i></label>
+                </div>
+            </div>
+            <div class="content-0-lang">
+                <div class="lang-icon"></div>
+                <select id="languageSelect" onchange="changeLanguage()">
+                    <option value="en-in">English(India)</option>
+                    <option value="en-us">English(US)</option>
+                    <option value="hi">हिन्दी</option>
+                    <option value="te" id="te">తెలుగు</option>
+                    <option value="fr">français</option>
+                    <option value="es">español</option>
+                    <option value="de">Deutsch</option>
+                    <option value="ko">한국인</option>
+                    <option value="ja">日本の</option>
+                    <option value="ru">русский </option>
+                </select>
+            </div>
+        </div>
+        <div class="content-1">
+                <div class="content-1-1">
+                    <i class="fa-solid fa-house-chimney-window"></i>
+                    <a href="index.html"><p>HOME</p></a>
+                </div>
+                <div class="content-1-1">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a href="cart.html"><p>MY CART</p></a>
+                </div>
+                <div class="content-1-1">
+                    <i class="fa-solid fa-user"></i>
+                    <a href="account.html" target="_blank"><p>ACCOUNT</p></a>
+                </div>
+                <div class="content-1-1">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <a href="#"><p>BEST SELLER</p></a>
+                </div>
+                <div class="content-1-1">
+                    <i class="fa-solid fa-wrench"></i>
+                    <a href="settings.html"><p>SETTINGS</p></a>
+                </div>
+        </div>
+        <div class="content-2">
+            <!--<button onclick="myfunction()">Toggle</button>-->
+            <div class="large"></div>
+            <div class="content-2-1 all">
+                <div class="head"><p>Vegetables</p></div>
+                <div class="items">
+                    <div class="items-1"><a href="tomato.html" id="tomato">Tomato</a></div>
+                    <div class="items-1"><a href="potato.html">Potato</a></div>
+                    <div class="items-1"><a href="ladies-finger.html">Ladies Finger</a></div>
+                    <div class="items-1"><a href="Cauliflower.html">Cauliflower</a></div>
+                    <div class="items-1"><a href="carrot.html">Carrot</a></div>
+                    <div class="items-1"><a href="onion.html">Onion</a></div>
+                    <div class="items-1">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        MORE
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="content-2-2 all">
+                <div class="head"><p>Fruits</p></div>
+                <div class="items">
+                    <div class="items-2"><a href="apple.html">Apple</a></div>
+                    <div class="items-2"><a href="banana.html">Banana</a></div>
+                    <div class="items-2"><a href="mango.html">Mango</a></div>
+                    <div class="items-2"><a href="#">Kiwi</a></div>
+                    <div class="items-2"><a href="#">Watermelon</a></div>
+                    <div class="items-2"><a href="#">Dragon Fruit</a></div>
+                    <div class="items-2">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        MORE
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="content-2-3 all">
+                <div class="head"><p>Whole Grains</p></div>
+                <div class="items">
+                    <div class="items-3"><a href="#">Barley</a></div>
+                    <div class="items-3"><a href="#">Corn</a></div>
+                    <div class="items-3"><a href="#">Whole Wheat</a></div>
+                    <div class="items-3"><a href="#">Brown Rice</a></div>
+                    <div class="items-3"><a href="#">Millet</a></div>
+                    <div class="items-3"><a href="#">Oats</a></div>
+                    <div class="items-3">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        MORE
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-2-4 all">
+                <div class="head"><p>Fibre Crops</p></div>
+                <div class="items">
+                    <div class="items-4"><a href="#">Cotton</a></div>
+                    <div class="items-4"><a href="#">Jute</a></div>
+                    <div class="items-4"><a href="#">Bagasse</a></div>
+                    <div class="items-4"><a href="#">Hemp</a></div>
+                    <div class="items-4"><a href="#">Brown Flax</a></div>
+                    <div class="items-4"><a href="#">Sisal Fibre</a></div>
+                    <div class="items-4">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        MORE
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-2-discount">
+                <div class="discount-text"><p>Discounts</p></div>
+                <div class="discount-items">
+                    <div class="discount-all"><p>Brinjal</p><div class="perc">Save <br>5 Rs/-</div></div>
+                    <div class="discount-all"><p>Pine Apple</p><div class="perc">Save <br>10 Rs/-</div></div>
+                    <div class="discount-all"><p>Papaya</p><div class="perc">Save <br>13 Rs/-</div></div>
+                    <div class="discount-all"><p>Pumpkin</p><div class="perc">Save <br>20 Rs/-</div></div>
+                    <div class="discount-all"><p>Bitter Guard</p><div class="perc">Save <br>5 Rs/-</div></div>
+                    <div class="discount-all"><p>Capsicum</p><div class="perc">Save <br>9 Rs/-</div></div>
+                    <div class="discount-all"><p>Garlic</p><div class="perc">Save <br>4 Rs/-</div></div>
+                    <div class="discount-all"><p>Raddish</p><div class="perc">Save <br>8 Rs/-</div></div>
+                </div>
+                
+            </div>
+
+            <div class="content-2-5 all">
+                <div class="head"><p>Dry Fruits</p></div>
+                <div class="items">
+                    <div class="items-5"><a href="#">Almonds</a></div>
+                    <div class="items-5"><a href="#">Kashews</a></div>
+                    <div class="items-5"><a href="#">Walnuts</a></div>
+                    <div class="items-5"><a href="#">Dates</a></div>
+                    <div class="items-5"><a href="#">Pistachios</a></div>
+                    <div class="items-5"><a href="#">Prunes</a></div>
+                    <div class="items-5">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        MORE
+                    </div>
+                </div>
+            </div>
+
+            <div class="top-sellers">
+                <div class="sellers-text"><p>Top Sellers</p></div>
+                <div class="sellers">
+                    <div class="sellers-content">
+                        <div class="seller-img-sec">
+                            <div class="seller-img-1"></div>
+                        </div>
+                        <div class="seller-details">
+                            <h1>Subbaiyah</h1>
+                            <p>Meet Subbaiyah ,who is famous for his best quality of crops and also <br>for the greatest service with a lovely smile on his face.
+                            </p>
+                            <p>Status: Active for saling</p>
+                            <p>Crops on Sale: Wheat, Cucumber, Tomato...</p>
+                        </div>
+                    </div>
+
+                    <div class="sellers-content">
+                        <div class="seller-img-sec">
+                            <div class="seller-img-2"></div>
+                        </div>
+                        <div class="seller-details">
+                            <h1>Ravi</h1>
+                            <p>Ravi who holds the highest sales record of vegetables of all time on FOODOM<br>Not only about the quantity his crops were also exported with highest quality. 
+                            </p>
+                            <p>Status: Currently not active for Saling</p>
+                            <p>Crops on Sale: None</p>
+                        </div>
+                    </div>
+
+                    <div class="sellers-content">
+                        <div class="seller-img-sec">
+                            <div class="seller-img-3"></div>
+                        </div>
+                        <div class="seller-details">
+                            <h1>Rathnamma</h1>
+                            <p>A well known farmer Rathnamma who is a best fruit seller.<br>She grows different type of fruits in her field with many precautionary actions.
+                            </p>
+                            <p>Status: Active for saling</p>
+                            <p>Crops on Sale: Grapes, Banana...</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div ><!--top sellers-->
+
+            <div class="credits">
+                <h1>FOODOM</h1>
+                <p>This is a website created to connect consumers directly to the farmers and it has to be noted that it was still in the beta(Development) stage. A few erros may occur while using this version and be sure to note that this website is not responsive, so kindly co-operate with the issues occured in the webpage.</p>
+                <p>Contact details, to get in touch</p>
+                    <div class="creator">
+                        <p>AVINASH</p>
+                        <a href="https://www.linkedin.com/in/annavarapu-avinash-b34aab30b">Linkedin</a>
+                    </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="project-2.js"></script>
+</body>
+</html>

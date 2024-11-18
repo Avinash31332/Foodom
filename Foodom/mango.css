@@ -1,0 +1,402 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.content-1-1 a{
+    text-decoration: none;
+    color:#3E92CC;
+}
+
+.content-1-1 a p:hover{
+    color:white;
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.content{
+    width: 100vw;
+    height: 100%;
+ /*   background-color: pink; */
+
+}
+
+.content-1{
+    position: absolute;
+    top: 60px;
+    left: -100px;
+    visibility:hidden;
+    font-size: 2rem;
+    height: 100%;
+    width: 120px;
+    margin: 4px;
+    background-color: #FDFFFC;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.content-1-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom:  20px ;
+    height: 60px;
+    border-bottom: 2px solid rgb(218, 217, 217);
+    border-radius: 20px 0;
+    color: #3E92CC;
+    cursor: pointer;
+    transition: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+    animation: animate .4s linear 1;
+}
+
+.content-1-1:last-child{
+    border-top: 2px solid rgb(218, 217, 217);
+    border-bottom: none;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.content-1-1:hover,.content-1-1:active{
+    background-color: #D8315B;
+    color: white;
+    border-radius: 20px 0;
+}
+
+.content-1-1:hover{
+    gap: 20px;
+    font-size: 2.2rem;
+}
+
+.content-1-1 p{
+    text-align: center;
+    font-size: 20px;
+    animation: animate .4s linear 1;
+}
+
+
+@keyframes animate {
+    0%{
+        position: relative;
+        opacity: 0;
+        bottom: -50px;
+        visibility: hidden;
+    }
+    100%{
+        position: relative;
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+/* content-0 */
+
+.content-0{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    border-radius: 0 0 5px 5px;
+}
+
+.content-0 i{
+    font-size: 25px;
+    margin-left: 30px;
+
+}
+
+/*.border{
+    border: 1px solid black;
+}*/
+
+.image{
+    margin-top: 25px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+.content-0-input{
+    display: flex;
+    width: 500px;
+    height: 70%;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.content-0-input input{
+    padding-left: 4px;
+    font-size: 25px;
+    width: 90%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    cursor:auto;
+}
+
+.content-0-input:hover{
+    border-radius: 10px;
+    border: 1px solid #D8315B;
+}
+
+.input-icon{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #3E92CC;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.input-icon:hover{
+    background-color: #D8315B;
+}
+
+.content-0-lang{
+    width: 300px;
+    height: 80%;
+}
+
+select{
+    padding: 0 10px 0 10px;
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+select:hover{
+    animation: borderAnimate 1s ease-in-out none infinite;
+}
+
+.input-icon i{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* content-1 toggle */
+
+.add{
+    left: 0px;
+    visibility:visible;
+    position: fixed;
+    font-size: 2rem;
+    height: 100%;
+    width: 120px;
+    margin: 4px;
+    background-color: #FDFFFC;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+/* content-2 */
+
+/* universal prop */
+
+.large{
+    height: 400px;
+    border: none;
+    background-color: greenyellow;
+    background: url("https://e1.pxfuel.com/desktop-wallpaper/197/154/desktop-wallpaper-4-mango-quality-mango-mango-hqfx-mango.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.profiles{
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    margin-left:40px;
+    width: 95%;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.profiles-text{
+    color: white;
+    height:10%;
+    width:100%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    background-color: #3E92CC;
+}
+
+.profiles-info{
+    height: 90%;
+    width: 100%;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+
+.profiles-info::-webkit-scrollbar{
+    width: 0;
+}
+
+.items-1{
+    margin-top: 50px;
+    min-height: 200px;
+    width: 90%;
+    display: flex;
+    border-radius: 150px 20px 20px 100px;
+    border: 1px solid gray;
+    cursor:pointer;
+    transition:all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s; 
+}
+
+.items-1:hover{
+    background-color: rgb(201, 255, 121);
+}
+
+.items-1-img{
+    height: 120%;
+    width:20%;
+    background-color: #3E92CC;
+    background-image: url("https://t3.ftcdn.net/jpg/04/32/15/18/360_F_432151892_oQ3YQDo2LYZPILlEMnlo55PjjgiUwnQb.jpg");
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.items-2-img{
+    height: 120%;
+    width:20%;
+    background-color: #3E92CC;
+    background-image: url("https://thumbs.dreamstime.com/b/happy-african-farmer-working-countryside-holding-wood-box-fresh-vegetables-215052594.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.items-3-img{
+    height: 120%;
+    width:20%;
+    background-color: #3E92CC;
+    background-image: url("https://c8.alamy.com/comp/2DFBP9N/happy-indian-farmer-in-agricultural-field-outdoor-2DFBP9N.jpg");
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.items-4-img{
+    height: 120%;
+    width:20%;
+    background-color: #3E92CC;
+    background-image: url("https://stories.bettercotton.org/Almas-Parveen/assets/150PkQSbV4/img_1486-2560x1707.jpeg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.items-1-info{
+    height:100%;
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font: 1.1em sans-serif;
+}
+
+.items-1:hover{
+    transform:scale(1.1);
+}
+
+.items-1-info p{
+    margin-top:25px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.items-1-info h1{
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.more{
+    font-size: 30px;
+    color: white;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.more-price{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    color: white;
+    background: #D8315B;
+    margin-right: 300px;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.more-text{
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #D8315B;
+}
+
+/* creator */
+
+.credits{
+    padding: 10px;
+    margin-top: 50px;
+    border: none;
+    border-top: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 200px;
+    width: 100%;
+}
+
+.creator{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.creator p{
+    margin-left: 30px;
+}

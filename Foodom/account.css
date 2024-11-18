@@ -1,0 +1,349 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.content-1-1 a{
+    text-decoration: none;
+    color:#3E92CC;
+}
+
+.content-1-1 a p:hover{
+    color:white;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.items-1 a,.items-1 a,.items-2 a,.items-3 a,.items-4 a,.items-5 a{
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+.content{
+    width: 100vw;
+    height: 100%;
+ /*   background-color: pink; */
+
+}
+
+.content-1{
+    position: absolute;
+    top: 60px;
+    left: -100px;
+    visibility:hidden;
+    font-size: 2rem;
+    height: 100%;
+    width: 120px;
+    margin: 4px;
+    background-color: #FDFFFC;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.content-1-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom:  20px ;
+    height: 60px;
+    border-bottom: 2px solid rgb(218, 217, 217);
+    border-radius: 20px 0;
+    color: #3E92CC;
+    cursor: pointer;
+    transition: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+    animation: animate .4s linear 1;
+}
+
+.content-1-1:last-child{
+    border-top: 2px solid rgb(218, 217, 217);
+    border-bottom: none;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.content-1-1:hover,.content-1-1:active{
+    background-color: #D8315B;
+    color: white;
+    border-radius: 20px 0;
+}
+
+.content-1-1:hover{
+    gap: 20px;
+    font-size: 2.2rem;
+}
+
+.content-1-1 p{
+    text-align: center;
+    font-size: 20px;
+    animation: animate .4s linear 1;
+}
+
+
+@keyframes animate {
+    0%{
+        position: relative;
+        opacity: 0;
+        bottom: -50px;
+        visibility: hidden;
+    }
+    100%{
+        position: relative;
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+/* content-0 */
+
+.content-0{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    border-radius: 0 0 5px 5px;
+}
+
+.content-0 i{
+    font-size: 25px;
+    margin-left: 30px;
+
+}
+
+/*.border{
+    border: 1px solid black;
+}*/
+
+.image{
+    margin-top: 30px;
+    margin: 25px auto 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+#bars{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+#bars:hover{
+    color: #D8315B;
+}
+
+
+/*
+
+
+.content-0-input{
+    display: flex;
+    width: 500px;
+    height: 70%;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: all;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+}
+
+.content-0-input input{
+    padding-left: 4px;
+    font-size: 25px;
+    width: 90%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    cursor:auto;
+}
+
+.content-0-input:hover{
+    border-radius: 10px 15px 15px 10px;
+    border: 1px solid #D8315B;
+}
+
+.input-icon{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #3E92CC;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.input-icon:hover{
+    background-color: #D8315B;
+}
+
+
+*/
+
+.content-0-lang{
+    width: 300px;
+    height: 80%;
+}
+
+select{
+    padding: 0 10px 0 10px;
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+select:hover{
+    animation: borderAnimate 1s ease-in-out none infinite;
+}
+
+.input-icon i{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* content-1 toggle */
+
+.add{
+    left: 0px;
+    visibility:visible;
+    position: fixed;
+    font-size: 2rem;
+    height: 100%;
+    width: 120px;
+    margin: 4px;
+    background-color: #FDFFFC;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+
+/* content-2 */
+
+.content-2{
+    width: 100%;
+    height: 100%;
+ /*   background-color: burlywood; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.content-box{
+    margin: auto auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 60px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.box-content{
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+@keyframes borderAnimate {
+    0%{
+        border: 2px solid #3E92CC;
+        border-left-color: #D8315B;
+        border-right-color: #D8315B;
+    }
+    50%{
+        border: 2px solid #3E92CC;
+        border-top-color: #D8315B;
+        border-bottom-color: #D8315B;
+    }
+    100%{
+            border: 2px solid #3E92CC;
+            border-left-color: #D8315B;
+            border-right-color: #D8315B;
+    }
+}
+
+
+
+input{
+    font-size: 25px;
+    color: black;
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid gray;
+    animation: border 1s ease-in-out none infinite ;
+    background-color: #d7eeff;
+
+}
+
+.box-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-logo img{
+    height: 250px;
+    width: 250px;
+}
+
+.content-box button{
+    text-align: center;
+    color: white;
+    background-color: #D8315B;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+}
+
+.content-box button:hover, .content-box button:active{
+    background-color: #cb3258;
+}
+
+input::placeholder{
+    font-size: 20px;
+}
+
+input:focus{
+    transition: all;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+    background-color: transparent;
+}

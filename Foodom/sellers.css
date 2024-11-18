@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height:100vh;
+    width:100vw;
+}
+
+
+/* content-0 */
+
+.content-0{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    border-radius: 0 0 5px 5px;
+}
+
+.content-0 i{
+    font-size: 25px;
+    margin-left: 30px;
+
+}
+
+/*.border{
+    border: 1px solid black;
+}*/
+
+.image{
+    margin-top: 25px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+.content-0-input{
+    display: flex;
+    width: 500px;
+    height: 70%;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.content-0-input input{
+    padding-left: 4px;
+    font-size: 25px;
+    width: 90%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    cursor:auto;
+}
+
+.content-0-input:hover{
+    border-radius: 10px;
+    border: 1px solid #D8315B;
+}
+
+.input-icon{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #3E92CC;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.input-icon:hover{
+    background-color: #D8315B;
+}
+
+.content-0-lang{
+    width: 300px;
+    height: 80%;
+}
+
+select{
+    padding: 0 10px 0 10px;
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+select:hover{
+    animation: borderAnimate 1s ease-in-out none infinite;
+}
+
+.input-icon i{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.content-1-1 a{
+    text-decoration: none;
+    color:#3E92CC;
+}
+
+.content-1-1 a p:hover{
+    color:white;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.content{
+    width: 100vw;
+    height: 100%;
+ /*   background-color: pink; */
+
+}
+
+.content-1{
+    position: absolute;
+    top: 60px;
+    left: -100px;
+    visibility:hidden;
+    font-size: 2rem;
+    height: 100%;
+    width: 120px;
+    margin: 4px;
+    background-color: #FDFFFC;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.content-1-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom:  20px ;
+    height: 60px;
+    border-bottom: 2px solid rgb(218, 217, 217);
+    border-radius: 20px 0;
+    color: #3E92CC;
+    cursor: pointer;
+    transition: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+    animation: animate .4s linear 1;
+}
+
+.content-1-1:last-child{
+    border-top: 2px solid rgb(218, 217, 217);
+    border-bottom: none;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.content-1-1:hover,.content-1-1:active{
+    background-color: #D8315B;
+    color: white;
+    border-radius: 20px 0;
+}
+
+.content-1-1:hover{
+    gap: 20px;
+    font-size: 2.2rem;
+}
+
+.content-1-1 p{
+    text-align: center;
+    font-size: 20px;
+    animation: animate .4s linear 1;
+}
+
+
+@keyframes animate {
+    0%{
+        position: relative;
+        opacity: 0;
+        bottom: -50px;
+        visibility: hidden;
+    }
+    100%{
+        position: relative;
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+
+
+
+.head{
+    width: 100%;
+    height: 45px;
+    background-color: #221f1f;
+}
+
+.head-icons{
+    width: 100%;
+    height:100%;
+    display:flex;
+    align-items: center;
+}
+
+.icons i{
+    color: black;
+}
+
+.icons a{
+    color: black;
+}
+
+.icons i:hover{
+    color: #e50914;
+}
+.icons{
+    margin-left: 4%;
+    font-size: 1.45rem;
+}
+
+main{
+    width:100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main i{
+    color:#3E92CC;
+    font-size: 300px;
+}
+
+main p{
+    color: black;
+    font-size: 25px;
+
+}
+
+.back{
+    margin: 4% 0 0 4%;
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 3rem;
+}
+
+.back a{
+    text-decoration: none;
+    color: #D8315B;
+}
+
+.back a:hover , .back a:active{
+    color: #e50914;
+}
+
+button{
+    width: 500px;
+    padding: 8px;
+    font-size: 2rem;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid black;
+    transition: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+button:hover{
+    border: 2px solid #e50914;
+}
+
+button a{
+    color: black;
+    text-decoration: none;
+}
+
+button a:hover{
+    color: #e50914;
+    text-decoration: none;
+}
